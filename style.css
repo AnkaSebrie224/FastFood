@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@200;300;400&family=Merriweather:wght@700;900&family=Open+Sans:wght@300;500;600;700;800&family=Schibsted+Grotesk&display=swap');
+/* Mobile styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    color: black;
+    background-color: bisque;
+    }
+    header{
+       width: 91%;
+       height: auto;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        margin-left: 10px;
+        padding-bottom: 20px;
+        
+    
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    header nav ul li{
+        list-style: none;
+    }
+    header nav ul li    a{
+        text-decoration: none;
+    }
+    
+    header nav ul li    a:hover{
+        color: red;
+    }
+    header nav h1{
+        color: black;
+        font-size: 40px;
+        font-weight: 700;
+        /* margin-right: 100px; */
+    }
+    .hero{
+        background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* Add animation to menu items */
+    .menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .menu-item:hover img {
+    transform: scale(1.1);
+    }
+    
+    /* Add animation to specials items */
+    .specials-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .specials-item:hover img {
+    transform: scale(1.1);
+    }
+    
+    .hero {
+        width: 91%;
+        padding: 60px;
+        text-align: center;
+    }
+    
+    .hero h1 {
+         margin-top: 0;
+         color: white;
+         font-size: 100px;
+         font-weight: bold;
+         line-height: 1.5;
+    }
+    .hero p{
+        color: white;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1.5;
+
+    }
+
+    button{
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        background-color: rgba(32, 163, 250, 0.171);
+        padding: 20px;
+        /* transform: translate(-20px); */
+
+    }
+    button:hover{
+        background-color: rgba(0, 0,0, 0.70);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .menu {
+    padding: 40px;
+    text-align: center;
+    }
+    
+    .menu-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    }
+    
+    .menu-item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    }
+    
+    .menu-item p {
+    margin-top: 0;
+    }
+    
+    .specials {
+    padding: 40px;
+    text-align: center;
+    }
+    
+    .specials-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    }
+    
+    .specials-item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    }
+    
+    .specials-item p {
+    margin-top: 0;
+    }
+
+    .about {
+        background-image: url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGFib3V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        color: #fff;
+        text-align: center;
+      }
+      
+      .about h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: black;
+      }
+      
+      .about p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        color: black;
+      }
+      
+      .about a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        color: #000;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+      
+      .about a:hover {
+        background-color: #fff;
+        color: #333;
+      }
+
+
+    footer {
+        background-color: #f8f8f8;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .social-media {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      .social-media li {
+        margin-right: 20px;
+      }
+      
+      .social-media a {
+        color: #333;
+      }
+      
+      .social-media i {
+        font-size: 24px;
+      }
+      
+    /* Media Queries for different screen sizes */
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .hero {
+        padding: 20px; /* Adjust the padding to your liking for mobile devices */
+    }
+
+    .hero h1 {
+        font-size: 30px; /* Adjust the font size for mobile devices */
+    }
+
+    .hero p {
+        font-size: 20px; /* Adjust the font size for mobile devices */
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust the styles as needed for tablets */
+    header {
+        padding: 20px 40px;
+        }
+        
+        nav {
+        display: block;
+        }
+        
+        nav li {
+        display: inline-block;
+        margin-right: 20px;
+        }
+        
+        .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .specials-items {
+        grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .about {
+            padding: 100px;
+          }
+        
+          .about h2 {
+            font-size: 4rem;
+          }
+        
+          .about p {
+            font-size: 2rem;
+          }
+        }
+/* For laptops */
+@media only screen and (min-width: 1020px) and (max-width: 1440px) {
+    /* Adjust the styles as needed for laptops */
+    header {
+        padding: 20px 40px;
+        }
+        
+        nav {
+        display: block;
+        }
+        
+        nav li {
+        display: inline-block;
+        margin-right: 20px;
+        }
+        
+        .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .specials-items {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .about {
+            padding: 100px;
+          }
+        
+          .about h2 {
+            font-size: 4rem;
+          }
+        
+          .about p {
+            font-size: 2rem;
+          }
+        }
+
+/* For desktops */
+@media only screen and (min-width: 1441px) {
+    /* Adjust the styles as needed for desktops */
+    header {
+        padding: 10px 40px;
+        }
+        
+        nav {
+        display: block;
+        }
+        
+        nav li {
+        display: inline-block;
+        margin-right: 20px;
+        }
+        
+        .menu-items {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .specials-items {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .menu-items {
+            grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .specials-items {
+            grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .about {
+                padding: 100px;
+              }
+            
+              .about h2 {
+                font-size: 4rem;
+              }
+            
+              .about p {
+                font-size: 2rem;
+              }
+            }
+   
